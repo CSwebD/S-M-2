@@ -19,109 +19,119 @@
         <i class="fas fa-bars fa-lg"></i>
       </button>
       <div id="navLinks" class="hidden sm:flex items-center space-x-6">
+        <a href="#hero" class="text-gray-600 hover:text-green-700">Home</a>
+        <a href="#about" class="text-gray-600 hover:text-green-700">About</a>
         <a href="#domains" class="text-gray-600 hover:text-green-700">Domains</a>
         <a href="#maps" class="text-gray-600 hover:text-green-700">Skill Maps</a>
-        <a href="#blog" class="text-gray-600 hover:text-green-700">Blog</a>
-        <a href="#about" class="text-gray-600 hover:text-green-700">About</a>
+        <a href="#articles" class="text-gray-600 hover:text-green-700">Blog</a>
+        <a href="#faq" class="text-gray-600 hover:text-green-700">FAQ</a>
         <a href="#signin" class="px-4 py-2 bg-green-700 text-white rounded hover:bg-green-800">Sign In</a>
       </div>
     </div>
     <div id="mobileMenu" class="sm:hidden hidden bg-white shadow-inner">
-      <a href="#domains" class="block px-4 py-2 text-gray-600 hover:text-green-700">Domains</a>
-      <a href="#maps" class="block px-4 py-2 text-gray-600 hover:text-green-700">Skill Maps</a>
-      <a href="#blog" class="block px-4 py-2 text-gray-600 hover:text-green-700">Blog</a>
+      <a href="#hero" class="block px-4 py-2 text-gray-600 hover:text-green-700">Home</a>
       <a href="#about" class="block px-4 py-2 text-gray-600 hover:text-green-700">About</a>
+      <a href="#domains" class="block px-4 py-2 text-gray-600 hover:text-green-700">Domains</a>
+      <a href="#articles" class="block px-4 py-2 text-gray-600 hover:text-green-700">Blog</a>
+      <a href="#faq" class="block px-4 py-2 text-gray-600 hover:text-green-700">FAQ</a>
       <a href="#signin" class="block px-4 py-2 bg-green-700 text-white hover:bg-green-800">Sign In</a>
     </div>
   </nav>
 
   <div class="pt-20">
     <!-- Hero Section -->
-    <section id="hero" class="flex flex-col items-center justify-center text-center py-20 bg-white">
-      <h1 class="text-4xl md:text-5xl font-extrabold text-green-700 mb-4">
+    <section id="hero" class="flex flex-col items-center justify-center text-center py-20 bg-green-50">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-green-700 mb-2">
         Shape Your Future with Skill Maps
       </h1>
-      <p class="text-lg text-gray-600 max-w-xl mb-6">
-        Interactive learning pathways, courses, and articles across a wide range of IT sub-industries.
+      <div class="h-1 w-24 bg-green-700 rounded mb-4"></div>
+      <p class="text-lg text-gray-700 max-w-xl mb-6">
+        Interactive learning pathways, curated skill maps, and insights across a wide range of IT disciplines.
       </p>
-      <button id="exploreBtn" class="px-6 py-3 bg-green-700 text-white rounded-lg hover:bg-green-800 transition">
-        Explore Pathways
+      <button id="exploreBtn" class="px-6 py-3 bg-white text-green-700 rounded-lg hover:bg-green-100 transition">
+        Explore Domains
       </button>
     </section>
 
-    <main class="max-w-6xl mx-auto p-6">
-      <!-- Domains -->
-      <section id="domains" class="mb-12">
-        <h2 class="text-2xl font-bold text-gray-800 mb-4">Domains</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-          <div class="p-6 bg-white border border-gray-200 rounded shadow-sm hover:shadow transition">
-            <h3 class="font-semibold text-green-700 mb-1">Development</h3>
-            <p class="text-gray-600">Frontend, Backend, Full-Stack</p>
-          </div>
-          <div class="p-6 bg-white border border-gray-200 rounded shadow-sm hover:shadow transition">
-            <h3 class="font-semibold text-green-700 mb-1">DevOps & SRE</h3>
-            <p class="text-gray-600">CI/CD, Infrastructure, Monitoring</p>
-          </div>
-          <div class="p-6 bg-white border border-gray-200 rounded shadow-sm hover:shadow transition">
-            <h3 class="font-semibold text-green-700 mb-1">Data</h3>
-            <p class="text-gray-600">Data Engineering, Data Science</p>
-          </div>
-          <div class="p-6 bg-white border border-gray-200 rounded shadow-sm hover:shadow transition">
-            <h3 class="font-semibold text-green-700 mb-1">AI & ML</h3>
-            <p class="text-gray-600">Machine Learning, Deep Learning</p>
-          </div>
-        </div>
-      </section>
+    <!-- About Section -->
+    <section id="about" class="px-6 py-12 bg-white">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">About Skill Maps</h2>
+      <p class="text-gray-600 max-w-3xl mx-auto">
+        Skill Maps is your go-to platform for structured, visual learning pathways. Whether you're starting out in development, diving into data science, or exploring the world of DevOps, our curated articles guide you step by step toward mastery.
+      </p>
+    </section>
 
-      <!-- Articles -->
-      <section id="articles" class="mb-12">
-        <h2 class="text-2xl font-bold text-gray-800 mb-4">Latest Articles</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <article class="bg-white border border-gray-200 rounded shadow-sm p-6 hover:shadow transition">
-            <h3 class="font-semibold text-green-700 mb-2">Building Modern DevOps Pipelines</h3>
-            <p class="text-gray-600 text-sm mb-4">Discover best CI/CD and infrastructure-as-code practices.</p>
-            <a href="#" class="text-green-700 hover:underline text-sm">Read More →</a>
-          </article>
-          <article class="bg-white border border-gray-200 rounded shadow-sm p-6 hover:shadow transition">
-            <h3 class="font-semibold text-green-700 mb-2">Data Engineering in the Cloud</h3>
-            <p class="text-gray-600 text-sm mb-4">Explore scalable data pipelines with major cloud providers.</p>
-            <a href="#" class="text-green-700 hover:underline text-sm">Read More →</a>
-          </article>
-          <article class="bg-white border border-gray-200 rounded shadow-sm p-6 hover:shadow transition">
-            <h3 class="font-semibold text-green-700 mb-2">Getting Started with Generative AI</h3>
-            <p class="text-gray-600 text-sm mb-4">An introduction to models, use cases, and tooling.</p>
-            <a href="#" class="text-green-700 hover:underline text-sm">Read More →</a>
-          </article>
+    <!-- Domains Section -->
+    <section id="domains" class="mb-12 px-6 py-8 bg-gray-50">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">Domains</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="p-6 bg-white border-l-4 border-green-700 rounded shadow-sm hover:shadow transition">
+          <h3 class="font-semibold text-green-800 mb-1">Development</h3>
+          <p class="text-gray-600">Frontend, Backend, Full-Stack</p>
         </div>
-      </section>
+        <div class="p-6 bg-white border-l-4 border-blue-700 rounded shadow-sm hover:shadow transition">
+          <h3 class="font-semibold text-blue-800 mb-1">DevOps & SRE</h3>
+          <p class="text-gray-600">CI/CD, Infrastructure, Monitoring</p>
+        </div>
+        <div class="p-6 bg-white border-l-4 border-purple-700 rounded shadow-sm hover:shadow transition">
+          <h3 class="font-semibold text-purple-800 mb-1">Data</h3>
+          <p class="text-gray-600">Data Engineering, Data Science</p>
+        </div>
+        <div class="p-6 bg-white border-l-4 border-red-700 rounded shadow-sm hover:shadow transition">
+          <h3 class="font-semibold text-red-800 mb-1">AI & ML</h3>
+          <p class="text-gray-600">Machine Learning, Deep Learning</p>
+        </div>
+      </div>
+    </section>
 
-      <!-- FAQ -->
-      <section id="faq" class="mb-12">
-        <h2 class="text-2xl font-bold text-gray-800 mb-4">Frequently Asked Questions</h2>
-        <div class="space-y-4">
-          <details class="p-4 bg-white border border-gray-200 rounded hover:shadow-sm transition">
-            <summary class="font-medium text-gray-800 cursor-pointer">How do I track my progress?</summary>
-            <p class="mt-2 text-gray-600 text-sm">Create an account to view your personalized dashboard.</p>
-          </details>
-          <details class="p-4 bg-white border border-gray-200 rounded hover:shadow-sm transition">
-            <summary class="font-medium text-gray-800 cursor-pointer">Are the courses free?</summary>
-            <p class="mt-2 text-gray-600 text-sm">Yes, all pathways and materials are completely free.</p>
-          </details>
-          <details class="p-4 bg-white border border-gray-200 rounded hover:shadow-sm transition">
-            <summary class="font-medium text-gray-800 cursor-pointer">Can I contribute content?</summary>
-            <p class="mt-2 text-gray-600 text-sm">Visit our community page to learn how to contribute.</p>
-          </details>
-        </div>
-      </section>
-    </main>
+    <!-- Blog Section -->
+    <section id="articles" class="mb-12 px-6 py-8 bg-gray-50">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">Blog</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <article class="bg-white rounded shadow-sm p-6 hover:shadow transition border-t-4 border-green-700">
+          <h3 class="font-semibold text-green-700 mb-2">Building Modern DevOps Pipelines</h3>
+          <p class="text-gray-600 text-sm mb-4">Discover best CI/CD and infrastructure-as-code practices.</p>
+          <a href="#" class="text-green-700 hover:underline text-sm">Read More →</a>
+        </article>
+        <article class="bg-white rounded shadow-sm p-6 hover:shadow transition border-t-4 border-blue-700">
+          <h3 class="font-semibold text-blue-700 mb-2">Data Engineering in the Cloud</h3>
+          <p class="text-gray-600 text-sm mb-4">Explore scalable data pipelines with major cloud providers.</p>
+          <a href="#" class="text-blue-700 hover:underline text-sm">Read More →</a>
+        </article>
+        <article class="bg-white rounded shadow-sm p-6 hover:shadow transition border-t-4 border-purple-700">
+          <h3 class="font-semibold text-purple-700 mb-2">Getting Started with Generative AI</h3>
+          <p class="text-gray-600 text-sm mb-4">An introduction to models, use cases, and tooling.</p>
+          <a href="#" class="text-purple-700 hover:underline text-sm">Read More →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="mb-12 px-6 py-8 bg-gray-50">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">Frequently Asked Questions</h2>
+      <div class="space-y-4">
+        <details class="p-4 bg-white border border-gray-200 rounded hover:shadow-sm transition">
+          <summary class="font-medium text-gray-800 cursor-pointer">How do I track my progress?</summary>
+          <p class="mt-2 text-gray-600 text-sm">Create an account to view your personalized dashboard.</p>
+        </details>
+        <details class="p-4 bg-white border border-gray-200 rounded hover:shadow-sm transition">
+          <summary class="font-medium text-gray-800 cursor-pointer">Are the courses free?</summary>
+          <p class="mt-2 text-gray-600 text-sm">Yes, all pathways and materials are completely free.</p>
+        </details>
+        <details class="p-4 bg-white border border-gray-200 rounded hover:shadow-sm transition">
+          <summary class="font-medium text-gray-800 cursor-pointer">Can I contribute content?</summary>
+          <p class="mt-2 text-gray-600 text-sm">Visit our community page to learn how to contribute.</p>
+        </details>
+      </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-50 py-6">
+    <footer class="bg-white py-6 border-t border-gray-200">
       <div class="max-w-6xl mx-auto text-center">
         <p class="text-gray-600 text-sm mb-4">&copy; 2025 Skill Maps. All rights reserved.</p>
         <div class="flex justify-center space-x-6">
           <a href="#" aria-label="Facebook" class="text-gray-600 hover:text-gray-800"><i class="fab fa-facebook fa-lg"></i></a>
-          <a href="#" aria-label="X (Twitter)" class="text-gray-600 hover:text-gray-800"><i class="far fa-xmark fa-lg"></i></a>
+          <a href="#" aria-label="X (Twitter)" class="text-gray-600 hover:text-gray-800"><i class="fab fa-twitter fa-lg"></i></a>
           <a href="#" aria-label="Discord" class="text-gray-600 hover:text-gray-800"><i class="fab fa-discord fa-lg"></i></a>
           <a href="#" aria-label="LinkedIn" class="text-gray-600 hover:text-gray-800"><i class="fab fa-linkedin fa-lg"></i></a>
           <a href="#" aria-label="YouTube" class="text-gray-600 hover:text-gray-800"><i class="fab fa-youtube fa-lg"></i></a>
